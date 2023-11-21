@@ -1,26 +1,94 @@
-/* Estilo para a div que envolve cada personagem (card) */
-.card {
-    background-color: #3498db; /* Cor de fundo azul */
-    border: 1px solid #2980b9; /* Cor da borda mais escura */
-    border-radius: 8px; /* Borda arredondada */
-    padding: 20px; /* Espaçamento interno */
-    margin: 10px; /* Espaçamento externo */
+body {
+    background-color: #544C32;
+    font-family: Trebuchet MS;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  }
+
+
+.icone {
+    margin-left: 15px;
+    width: 600px;
+    height: auto;
 }
 
-/* Estilo para o parágrafo dentro da div */
-.card p {
-    color: #fff; /* Cor do texto branco */
-    font-size: 16px;
-    margin-bottom: 8px;
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #383221;
 }
 
-/* Estilo para a imagem dentro da div */
+h1 {
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: #1c1910;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.card {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    margin-bottom: 20px;
+    border: solid 2px #877335;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    width: 200px; 
+    height: 300px; 
+    border-radius: 8px;
+}
+
 .card img {
-    width: 200px; /* Largura fixa da imagem */
-    height: auto; /* Altura ajustada automaticamente para manter a proporção */
-    max-height: 300px; /* Altura máxima para evitar que a imagem ultrapasse 200 pixels */
-    object-fit: cover; /* Garante que a imagem cubra completamente a área designada */
-    border-radius: 8px; /* Borda arredondada para a imagem */
+    width: 200px;
+    height: 300px; 
+    max-height: 300px; 
+    object-fit: cover; 
+    border-radius: 8px; 
 }
+
+
+
+
+

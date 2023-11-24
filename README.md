@@ -7,6 +7,6 @@
 - pagina de busca - estilo quase 0 :warning:
 
 
-Listagem geral: Seu aplicativo deverá listar os recursos da API. A listagem deverá se adaptar ao tipo de dado servido pela API. ✔️
-Seleção de recursos: Seu aplicativo deverá permitir que o usuário selecione um dos recursos da lista e então exibir seus detalhes. :warning:
+Listagem geral: Seu aplicativo deverá listar os recursos da API. A listagem deverá se adaptar ao tipo de dado servido pela API. ✔️ <br>
+Seleção de recursos: Seu aplicativo deverá permitir que o usuário selecione um dos recursos da lista e então exibir seus detalhes. :warning: <br>
 Busca de recursos: O usuário poderá buscar por um recurso específico através de um mecanismo de busca. ✔️

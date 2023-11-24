@@ -1,0 +1,58 @@
+
+
+/*----------------------------estilo de personagem.html-------------------------------------*/
+.result-style{
+    display: flex;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgb(0 0 0/ 0.7);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+img{
+    max-height: 200px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+
+.autocomplete-container {
+    position: relative;
+    display: inline-block;
+}
+
+#characterId {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#autocomplete-list {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+#autocomplete-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#autocomplete-list li:hover {
+    background-color: #f0f0f0;
+}

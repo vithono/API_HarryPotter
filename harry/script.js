@@ -1,91 +1,60 @@
-
-const btnGo = document.getElementById('btn-go');
 const content = document.getElementById('content');
+const cardContainer = document.querySelector('.card-container');
 
-const fetchAPICompleta = () =>{
+const fetchAPICompletaSeleciona = (value) =>{
     
-    //requisitando api com fetch
-    const result = fetch(`https://hp-api.onrender.com/api/characters`)
-    //quando a api responde, converte pra json
+    const result = fetch(value)
     .then((res) => res.json())
-    //retorna os dados do objeto de fato
     .then((data) => {
-        console.log(data)
         return data;
     });
 
     return result;
 }
 
-//btnGo.addEventListener('click', async (event) => {
-
 const updateContent = async () => {
-
-    const result = await fetchAPICompleta();
-    for(i = 0; i < result.length; i++){
-
+    
+    const result = await fetchAPICompletaSeleciona(`https://hp-api.onrender.com/api/characters`);
+    
+    result.forEach((character) => {
         const newDiv = document.createElement('div');
         newDiv.classList.add('card');
 
-        const newParagraph = document.createElement('p');
-        newParagraph.innerHTML = `${JSON.stringify(result[i], undefined, 2)}`;
-        
-        if(result[i].image !== ""){
-            const newImage = document.createElement('img');
-            newImage.src = `${result[i].image}`;
-            newImage.alt = `${result[i].name}`;
+        const cardInner = document.createElement('div');
+        cardInner.classList.add('card-inner');
 
-            newDiv.appendChild(newImage);
+        const cardFront = document.createElement('div');
+        cardFront.classList.add('card-front');
+
+        const cardBack = document.createElement('div');
+        cardBack.classList.add('card-back');
+
+        const newImage = document.createElement('img');
+        if (character.image !== "") {
+            newImage.src = character.image;
+        }else{
+            newImage.src = 'harry.png';
         }
 
-        newDiv.appendChild(newParagraph);
-        content.appendChild(newDiv);
-    }
+        newImage.alt = character.name;
+        cardFront.appendChild(newImage);
 
-}
+        const characterInfo = document.createElement('div');
+        characterInfo.innerHTML = `
+            <h1>${character.name}</h1>
+            <h3>Casa: ${character.house}</h3>
+            <h3>Espécie: ${character.species}</h3>
+            <h3>Data de nascimento:<br> ${character.dateOfBirth}</h3>
+        `;
+        cardBack.appendChild(characterInfo);
 
-// Chama a função automaticamente quando a página é carregada
+        cardInner.appendChild(cardFront);
+        cardInner.appendChild(cardBack);
+        newDiv.appendChild(cardInner);
+        cardContainer.appendChild(newDiv);
+    });
+};
+
 document.addEventListener('DOMContentLoaded', async () => {
     await updateContent();
 });
-
-/*const characterId = document.getElementById('characterId');
-const content = document.getElementById('content');
-const image = document.getElementById('img');
-
-
-const btnGo = document.getElementById('btn-go');
-
-
-const fetchAPI = (value) =>{
-    
-    //requisitando api com fetch
-    const result = fetch(`https://hp-api.onrender.com/api/character/${value}`)
-    //quando a api responde, converte pra json
-    .then((res) => res.json())
-    //retorna os dados do objeto de fato
-    .then((data) => {
-        //console.log(data)
-        return data[0];
-    });
-
-    return result;
-}
-
-/*const keys = ['name', 'species', 'gender', 'house', 'dateOfBirth', 'wand', 'alternate_names'];
-
-const buildResult = (result) => {
-    const newObject = {};
-    keys.map((key) => document.getElementById)
-}
-
-btnGo.addEventListener('click', async (event) => {
-
-    //Impede que a página atualize automaticamente
-    event.preventDefault();
-
-    const result = await fetchAPI(characterId.value);
-    content.textContent = `${JSON.stringify(result, undefined, 2)}`;
-    image.src = `${result.image}`
-
-})*/

@@ -5,6 +5,7 @@ body {
   }
 
 
+
 .icone {
     margin-left: 15px;
     width: 600px;
@@ -88,5 +89,16 @@ h1 {
     border-radius: 8px; 
 }
 
+a {
+    color: #ffffff;
+    text-decoration: none; 
+    font-weight: bold;
+    transition: color 0.3s; 
+   
+}
+
+a:hover {
+    color: #cfc2c2;
+}
 
 

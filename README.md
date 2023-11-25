@@ -4,7 +4,7 @@
 
 - atualmente a pagina index exibe a lista completa de personagens - css feito :heart:
 - link na pagina index para a pagina de busca - precisa d estilo
-- pagina de busca - estilo quase 0 :warning:
+- pagina de busca
 
 
 <b>Listagem geral:</b> Seu aplicativo deverá listar os recursos da API. A listagem deverá se adaptar ao tipo de dado servido pela API. ✔️ <br>

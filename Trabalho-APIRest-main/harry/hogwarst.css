@@ -1,0 +1,55 @@
+.gryffindor {
+    --theme-color: #8d0000;
+    --theme-drop-cap-color: #6a2b2b;
+    --theme-hero-drop-cap-color: #6a2b2b;
+    --theme-drop-cap-bg-image: none;
+    --theme-text-color: #fff;
+    --theme-carousel-color: #fff;
+    --theme-background: #000;
+    --theme-background-rgb: 0,0,0;
+    --theme-secondary-background: #8d0000;
+    --theme-spotlight-background: #591e1c;
+    --theme-house-adjective-color: #fd7366;
+}
+
+.hufflepuff {
+    --theme-color: #f2b800;
+    --theme-drop-cap-color: #b17220;
+    --theme-hero-drop-cap-color: #b17220;
+    --theme-drop-cap-bg-image: none;
+    --theme-text-color: #fff;
+    --theme-carousel-color: #fff;
+    --theme-background: #000;
+    --theme-background-rgb: 0,0,0;
+    --theme-secondary-background: #f2b800;
+    --theme-spotlight-background: #b17220;
+    --theme-house-adjective-color: #fdc055;
+}
+
+.ravenclaw {
+    --theme-color: #004e80;
+    --theme-drop-cap-color: #265caa;
+    --theme-hero-drop-cap-color: #265caa;
+    --theme-drop-cap-bg-image: none;
+    --theme-text-color: #fff;
+    --theme-carousel-color: #fff;
+    --theme-background: #000;
+    --theme-background-rgb: 0,0,0;
+    --theme-secondary-background: #004e80;
+    --theme-spotlight-background: #173151;
+    --theme-house-adjective-color: #317adc;
+}
+
+.slytherin {
+    --theme-color: #005416;
+    --theme-drop-cap-color: #086c5c;
+    --theme-hero-drop-cap-color: #086c5c;
+    --theme-drop-cap-bg-image: none;
+    --theme-text-color: #fff;
+    --theme-carousel-color: #fff;
+    --theme-background: #000;
+    --theme-background-rgb: 0,0,0;
+    --theme-secondary-background: #005416;
+    --theme-spotlight-background: #05201c;
+    --theme-house-adjective-color: #259a87;
+}

@@ -1,0 +1,145 @@
+body {
+    background-color: #544C32;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    text-align: center;
+  }
+
+
+.icone {
+    margin-left: 15px;
+    width: 600px;
+    height: auto;
+}
+
+
+h3 {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 18px;
+    color: #383221;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: 'Domine', serif;
+    font-size: 22px;
+    color: #1c1910;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.card {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    margin-bottom: 20px;
+    border: solid 2px #877335;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card.noHover:hover .card-inner {
+    transform: none;
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    width: 200px; 
+    height: 300px; 
+    border-radius: 8px;
+}
+
+.card img {
+    width: 200px;
+    height: 300px; 
+    max-height: 300px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+.perfil{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: white;
+    padding: 29px;
+    box-shadow: 7px 9px 35px -9px rgba(0,0,0,0.38);
+    border-radius: 5px;
+    min-width: 25rem;
+    max-width: 30rem;
+    min-height: 22rem;
+    text-align: left;
+}
+
+.perfil span{
+    font-weight: bolder;
+}
+
+.perfil .dados{
+    text-align: center;
+}
+
+
+.perfil .casa{
+    border-top: 1px solid#d6d4dc;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img#house {
+    width: 20% !important;
+}
+
+button#fechar, button#abrir{
+    background-color: #877335;
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    font-weight: bolder;
+    padding: 0.8rem 1rem;
+}
+
+button#fechar{
+    float: right;
+}
+
+

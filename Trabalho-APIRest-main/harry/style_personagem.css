@@ -1,0 +1,195 @@
+
+
+/*----------------------------estilo de personagem.html-------------------------------------*/
+body {
+    background-color: #867865;
+    margin: 0;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  }
+
+.result-style{
+    background-color: white;
+    padding: 29px;
+    box-shadow: 7px 9px 35px -9px rgba(0,0,0,0.38);
+    border-radius: 5px;
+    display: flex;
+    text-align: left;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+img{
+    max-height: 200px;
+    padding-right: 20px;
+}
+
+.autocomplete-container {
+    position: relative;
+    display: inline-block;
+}
+
+#characterId {
+    padding: 10px;
+    width: 25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#autocomplete-list {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+#autocomplete-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#autocomplete-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pesquisa div input{
+   width: 20rem;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem; 
+}
+
+.options label {
+    width: 40%;
+}
+
+.options input {
+    margin-left: 5%;
+    transform: rotateZ(45deg);
+}
+
+.option-item {
+    flex-basis: var(--larguraInfo);
+}
+
+:root{
+    --larguraInfo: 20%;
+}
+
+header{
+    background-color:#413a31;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+
+header a {
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+form {
+    padding: 0 5%;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo h2 {
+    margin-right: 10px;
+}
+
+.titulo hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid white;
+}
+
+.info{
+    margin: auto;
+    width: 80%;
+}
+
+button{
+    font-weight: bolder;
+    color: white;
+    padding: 1rem 1.2rem;
+    border: 0;
+    border-radius: 10px;
+}
+
+#btn-go{
+    background-color: #ad4957;
+}
+
+#btn-reset{
+    background-color: #495fad;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#content span{
+    font-weight: bold;
+}
+
+#content p {
+    flex-basis: 40%;
+    min-width: 135px;
+    border-left: 1px solid black;
+    padding: 1rem;
+    margin-block: 0;
+}
+
+
+
+@media only screen and (min-width: 1201px) {
+    :root{
+        --larguraInfo: 25%;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 601px) {
+    :root{
+        --larguraInfo: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    :root{
+        --larguraInfo: 70%;
+    }
+
+    .pesquisa{
+        flex-direction: column;
+    }
+}

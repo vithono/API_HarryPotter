@@ -8,8 +8,9 @@
     </head>
     <body>
         <form action="" method="get">
-            <h2>Busca por personagem:</h2>
+            <h1>Busca por personagem:</h1>
 
+            <p>Digite o nome do personagem que deseja encontrar</p>
             <div class="autocomplete-container">
                 <input type="text" name="" id="characterId" oninput="buscarItens()"> 
                 <ul id="autocomplete-list"></ul>  
@@ -19,31 +20,31 @@
             <h2>Informações</h2>
     
             <input type="checkbox" name="name" id="name">
-            <label for="name">Nome</label><br>
+            <label for="name">Nome</label>
             
             <input type="checkbox" name="alternate_names" id="alternate_names">
-            <label for="alternate_names">Nomes Alternativos</label><br>
+            <label for="alternate_names">Nomes Alternativos</label>
             
             <input type="checkbox" name="species" id="species">
             <label for="species">Espécie</label><br>
             
             <input type="checkbox" name="gender" id="gender">
-            <label for="gender">Gênero</label><br>
+            <label for="gender">Gênero</label>
            
             <input type="checkbox" name="house" id="house">
-            <label for="house">Casa de Hogwarts</label><br>
+            <label for="house">Casa de Hogwarts</label>
            
             <input type="checkbox" name="dateOfBirth" id="dateOfBirth">
             <label for="dateOfBirth">Data de Nascimento</label><br>
             
             <input type="checkbox" name="wizard" id="wizard">
-            <label for="wizard">Bruxo?</label><br>
+            <label for="wizard">Bruxo?</label>
             
             <input type="checkbox" name="ancestry" id="ancestry">
-            <label for="ancestry">Ancestralidade</label><br>        
+            <label for="ancestry">Ancestralidade</label>     
             
             <input type="checkbox" name="wand" id="wand">
-            <label for="wand">Varinha</label><br>
+            <label for="wand">Varinha</label>
             
             <input type="checkbox" name="patronus" id="patronus">
             <label for="patronus">Patronous</label><br>
@@ -57,6 +58,8 @@
             <div id="content"></div>
     
         </div>
+        <br><br>
+        <a href="index.html">Voltar para a página principal</a><br>
 
 
         <script src="lista.js"></script>

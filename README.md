@@ -4,10 +4,6 @@
 
 Trabalho feito em grupo para disciplina de Desenvovlvimento WEB <br>
 ➡️Integrantes @Nicolle-Oliveira e @AnnyACAM
-- A pagina index exibe a lista completa de personagens - css feito :heart:
-- link na pagina index para a pagina de busca - precisa d estilo
-- pagina de busca
-
 
 <b>Listagem geral:</b> Seu aplicativo deverá listar os recursos da API. A listagem deverá se adaptar ao tipo de dado servido pela API. ✔️ <br>
 <b>Seleção de recursos:</b> Seu aplicativo deverá permitir que o usuário selecione um dos recursos da lista e então exibir seus detalhes. ✔️ <br>

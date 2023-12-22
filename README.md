@@ -2,7 +2,9 @@
 
 [link da api do harry](https://hp-api.onrender.com/)
 
-- atualmente a pagina index exibe a lista completa de personagens - css feito :heart:
+Trabalho feito em grupo para disciplina de Desenvovlvimento WEB 
+➡️Inetgrantes -> @Nicolle-Oliveira e @AnnyACAM
+- A pagina index exibe a lista completa de personagens - css feito :heart:
 - link na pagina index para a pagina de busca - precisa d estilo
 - pagina de busca
 
